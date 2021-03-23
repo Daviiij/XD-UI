@@ -1,7 +1,7 @@
 /*
  * @Author: Dad
  * @Date: 2021-03-23 16:53:43
- * @LastEditTime: 2021-03-23 16:58:39
+ * @LastEditTime: 2021-03-23 17:41:46
  * @LastEditors: Dad
  * @Description: 
  */
@@ -9,7 +9,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+// import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
