@@ -1,13 +1,13 @@
 /*
  * @Author: Dad
  * @Date: 2021-03-23 16:53:43
- * @LastEditTime: 2021-03-23 17:41:46
+ * @LastEditTime: 2021-03-23 18:54:18
  * @LastEditors: Dad
- * @Description: 
+ * @Description:
  */
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./styles/index.scss";
 import App from "./App";
 // import reportWebVitals from "./reportWebVitals";
 

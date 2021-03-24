@@ -1,32 +1,23 @@
 /*
  * @Author: Dad
  * @Date: 2021-03-23 16:53:43
- * @LastEditTime: 2021-03-23 17:11:26
+ * @LastEditTime: 2021-03-23 21:33:45
  * @LastEditors: Dad
- * @Description: 
+ * @Description:
  */
-import logo from "./assets/logo.svg";
-import "./App.css";
+import React from "react";
+import Button from "./pages/Button";
+import Alert from "./components/Alert";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Button />
+        <Alert />
       </header>
     </div>
   );
-}
+};
 
 export default App;

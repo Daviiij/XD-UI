@@ -1,7 +1,7 @@
 <!--
  * @Author: Dad
  * @Date: 2021-03-23 16:53:43
- * @LastEditTime: 2021-03-23 18:08:14
+ * @LastEditTime: 2021-03-23 20:42:12
  * @LastEditors: Dad
  * @Description:
 -->
@@ -16,7 +16,7 @@ src 小呆UI项目文件夹
 
 styles/
   _variables.scss 各种变量以及可配置设置
-  _mixins.scss 全局 mixins
+  _mixins.scss 全局 mixins 可复用
   _functions.scss 全局functions
 
 components/
