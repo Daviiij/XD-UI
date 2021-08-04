@@ -10,11 +10,13 @@ import Button from "./pages/Button";
 import Menu from "./components/Menu/menu";
 import MenuItem from "./components/Menu/menuItem";
 import SubMenu from "./components/Menu/subMenu";
+import Icon from "./components/Icon/icon";
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
+        <Icon icon='coffee' theme='danger' size='10x' />
         <Menu mode='vertical' onSelect={(index) => { console.log(index) }} defaultOpenSubMenus={['3']} defaultIndex='0'>
           <MenuItem >
             cool link
