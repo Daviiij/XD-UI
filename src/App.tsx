@@ -7,30 +7,38 @@
  */
 import React from "react";
 import Button from "./pages/Button";
-import Alert from "./components/Alert";
-import MenuItem from "./components/Menu/menuItem";
 import Menu from "./components/Menu/menu";
+import MenuItem from "./components/Menu/menuItem";
+import SubMenu from "./components/Menu/subMenu";
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Menu defaultIndex={0}>
-          <MenuItem index={0}>
+        <Menu mode='vertical' onSelect={(index) => { console.log(index) }} defaultOpenSubMenus={['3']} defaultIndex='0'>
+          <MenuItem >
             cool link
           </MenuItem>
-          <MenuItem index={1} disabled>
+          <MenuItem disabled>
             cool link 1
           </MenuItem>
-          <MenuItem index={2}>
+          <MenuItem >
             cool link 2
           </MenuItem>
-          <li>hallo</li>
+          <SubMenu title='dropdown'>
+            <MenuItem>
+              cool link 1
+            </MenuItem>
+            <MenuItem >
+              cool link 2
+            </MenuItem>
+          </SubMenu>
+          <MenuItem >
+            cool link 3
+          </MenuItem>
         </Menu>
-        <Button />
-        {/* <Alert /> */}
-      </header> 
-    </div>
+      </header>
+    </div >
   );
 };
 
