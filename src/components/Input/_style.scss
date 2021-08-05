@@ -1,0 +1,121 @@
+.xd-input-wrapper {
+    display: flex;
+    width: $input-max-width;
+    max-width: 500px;
+    position: relative;
+    .icon-wrapper {
+        cursor: pointer;
+        position: absolute;
+        height: 100%;
+        width: 35px;
+        justify-content: center;
+        color: $input-color;
+        right: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        svg {
+            color: $input-placeholder-color;
+        }
+    }
+    .input-selected-options {
+        position: absolute;
+        left: 0;
+        align-self: center;
+        margin: 2px 3px;
+        .input-selected-option {
+            margin: 0 $spacer/4;
+            display: inline-block;
+            padding: 2px 5px;
+            color: $blue;
+            cursor: pointer;
+            border-radius: 3px;
+            border: 1px solid lighten($blue, 20%);
+            background-color: lighten($blue, 35%);
+            line-height: $line-height-base;
+            &:hover {
+                color: darken($blue, 30%);
+            }
+            .xd-icon {
+                margin-left: 3px;
+            }
+        }
+    }
+}
+.icon-wrapper + .xd-input-inner {
+    padding-right: 35px;
+}
+.xd-input-inner {
+    width: 100%;
+    padding: $input-padding-y $input-padding-x;
+    font-family: $input-font-family;
+    font-size: $input-font-size;
+    font-weight: $input-font-weight;
+    line-height: $input-line-height;
+    color: $input-color;
+    background-color: $input-bg;
+    background-clip: padding-box;
+    border: $input-border-width solid $input-border-color;
+
+    box-shadow: $input-box-shadow;
+    transition: $input-transition;
+
+    &:focus {
+        color: $input-focus-color;
+        background-color: $input-focus-bg;
+        border-color: $input-focus-border-color;
+        outline: 0;
+        box-shadow: $input-focus-box-shadow;
+    }
+    &::placeholder {
+        color: $input-placeholder-color;
+        opacity: 1;
+    }
+    &:disabled,
+    &[readonly] {
+        background-color: $input-disabled-bg;
+        border-color: $input-disabled-border-color;
+        opacity: 1;
+    }
+}
+.xd-input-group-prepend,
+.xd-input-group-append {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: $input-padding-y $input-padding-x;
+    font-size: $input-font-size;
+    font-weight: $font-weight-normal;
+    line-height: $input-line-height;
+    color: $input-group-addon-color;
+    text-align: center;
+    white-space: nowrap;
+    background-color: $input-group-addon-bg;
+    border: $input-border-width solid $input-group-addon-border-color;
+}
+.xd-input-group-append + .btn {
+    padding: 0;
+    border: 0;
+}
+
+.input-size-sm .xd-input-inner {
+    padding: $input-padding-y-sm $input-padding-x-sm;
+    font-size: $input-font-size-sm;
+    border-radius: $input-border-radius-sm;
+}
+
+.input-size-lg .xd-input-inner {
+    padding: $input-padding-y-lg $input-padding-x-lg;
+    font-size: $input-font-size-lg;
+    border-radius: $input-border-radius-lg;
+}
+
+.input-group > .xd-input-group-prepend,
+.input-group.input-group-append > .xd-input-inner {
+    @include border-left-radius(6px);
+}
+
+.input-group > .xd-input-group-append,
+.input-group.input-group-prepend > .xd-input-inner {
+    @include border-right-radius(6px);
+}
