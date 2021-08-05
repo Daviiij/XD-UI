@@ -8,6 +8,7 @@
     .menu-item {
         padding: $menu-item-padding-y $menu-item-padding-x;
         cursor: pointer;
+        user-select: none;
         transition: $menu-transition;
         &.is-active,
         &:hover {
@@ -46,7 +47,7 @@
         }
     }
     .xd-submenu {
-        display: none;
+        // display: none;
         list-style: none;
         padding-left: 0;
         white-space: nowrap;
@@ -62,7 +63,7 @@
         }
     }
     .xd-submenu.menu-opened {
-        display: block;
+        // display: block;
     }
 }
 
