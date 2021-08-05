@@ -32,13 +32,15 @@ export const Input: React.FC<InputProps> = (props) => {
     <div className={classes} style={style}>
       {prepend && <div onClick={onLeftClick} className="xd-input-group-prepend">{prepend}</div>}
       {icon && <div className="icon-wrapper" onClick={onIconClick} ><Icon icon={icon} /></div>}
-      <input placeholder={placeholder}
-        className="xd-input-inner" ref={inputRef}
-        disabled={disabled} {...restProps} />
+      <input
+        placeholder={placeholder}
+        className="xd-input-inner"
+        ref={inputRef}
+        disabled={disabled}
+        {...restProps}
+      />
       {children}
-      {append &&
-        <div onClick={onRightClick} className="xd-input-group-append">{append}</div>
-      }
+      {append && <div onClick={onRightClick} className="xd-input-group-append">{append}</div>}
     </div>
   )
 }
